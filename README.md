@@ -1,17 +1,3 @@
-# Table of Contents
-
-## Problem Analytics
-	
-## Data Shaping and Cleaning
-	
-## Data Analytics	
-
-## Model Scalability	
-
-## Conclusion Visualization
-	
-## Further Exploration	
-
 ## Problem Analytics
 
 To analyze which zip codes are the best to invest in, I need to break down both the profit and cost. Usually, profits come from the value increasing of the property itself and the rental revenue by leasing it out. Cost is more complex, including the original buying price, the tax, the maintenance fee and so on, not to mention the interest and time value of money have been ignored. But the main part is still the property market price. 
