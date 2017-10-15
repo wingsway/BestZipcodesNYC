@@ -80,49 +80,11 @@ It is very convenient to conduct visualization in R, especially when it comes to
 
 After dropping the zip codes with too less data points, throwing away zip codes without an accurate property price after simple imputation, I have 76 zip codes (almost half) with their estimated years to get investment back. By the way, there is a trade-off between data quality and quantity, I assumed client would prefer robust investigation rather than aggressive assumption, otherwise, I could adjust some parameters to improve the available zip codes with a conclusion. 
 
-I chose top 10 zip codes here, the shorter the break_even_years, the property within that zip code is more profitable, the larger rental_data_points_count, the conclusion is more trustworthy.
-
-zipcode
-break_even_years
-rental_data_points_count
-10305
-10.040151
-8
-10007
-12.538552
-8
-11249
-12.853855
-102
-11211
-14.996164
-279
-10025
-16.340155
-108
-10036
-16.921430
-103
-11231
-17.120085
-72
-11222
-17.642546
-123
-11238
-17.729455
-181
-11215
-17.779992
-136
-
 I put the results in NYC’s google map, if the point is bluer, that zip code is more profitable. If the point is redder, that zip code would take longer to get investment back. 
 
-Except the traditional Manhattan central areas (financial district, time square), it seems that Brooklyn is very promising investment area.
+![](Rplot.pdf)
 
-
-
-
+Except the traditional Manhattan central areas (financial district, time square), it seems that Brooklyn is a very promising investment area.
 
 ## Further Exploration
 
