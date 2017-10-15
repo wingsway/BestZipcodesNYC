@@ -1,18 +1,18 @@
-#Table of Contents
+# Table of Contents
 
-##Problem Analytics
+## Problem Analytics
 	
-##Data Shaping and Cleaning
+## Data Shaping and Cleaning
 	
-##Data Analytics	
+## Data Analytics	
 
-##Model Scalability	
+## Model Scalability	
 
-##Conclusion Visualization
+## Conclusion Visualization
 	
-##Further Exploration	
+## Further Exploration	
 
-##Problem Analytics
+## Problem Analytics
 
 To analyze which zip codes are the best to invest in, I need to break down both the profit and cost. Usually, profits come from the value increasing of the property itself and the rental revenue by leasing it out. Cost is more complex, including the original buying price, the tax, the maintenance fee and so on, not to mention the interest and time value of money have been ignored. But the main part is still the property market price. 
 
@@ -30,7 +30,7 @@ Fourthly, I also found that there are 62 missing values for zip code, almost 1.3
 
 Lastly but most importantly, if I remove those zip codes with too less Airbnb data points, there are 105 zip codes in Airbnb data set while there are far more less zip codes in Zillow’s. If I merge them together according to zip codes, I could only get data for 18 zip codes. Let’s assume that we could estimate the property price of a zip code according to the average price of the zip codes around it. So I found which zip codes are around which zip code first, query their latest price (considering the client wants to buy properties recently) and then calculate the average value, saved it as the median 2-bed home value of the zip code which I could not obtain from Zillow data set directly. With this method, I got 76 (72%) zip codes with a certain value for property price. I think this is good enough for analytics.
 
-##Data Analytics
+## Data Analytics
 
 As I mentioned before, I will calculate how many years it will take to get money back for each zip code. Specifically speaking, if the client buys one 2-bedroom at this time with the median market price within the zip code where it belongs to, and then rent it to short term leasing market to make profit, when we do not consider any other revenue and cost, how long will it take to get all money back?
 
@@ -78,7 +78,7 @@ Years to get money back =
 
 As I mentioned before, I kept zip codes with enough number of listings so that the average rental revenue of the listings from our Airbnb data set could represent that of the corresponding zip code. At this time, all the variables on the right of equation are available and I could move on to calculate my indicator.
 
-##Model Scalability 
+## Model Scalability 
 
 The datasets do have different units of time, the price is monthly for Zillow while daily for Airbnb. However, they are separate actions, one for revenue and another for cost, if we do not consider the value increase of the property itself. I do not think they are related with each other, and I do not need to worry about it. When it comes to the different times in Airbnb, we have last_scraped_date, host_since, calendar_updated, calendar_last_scraped, last_review and first_review. Calendar_updated, calendar_last_scraped could be used for availability information, last_scraped_date is more about price duration information. If needed, I could turn all calendar_updated into exact days with regular expression. And then according to calendar last scraped date, give an exact calendar update date. It has been completed in my python script.
 
@@ -88,7 +88,7 @@ Secondly, it means possible new listings and new prices for old listings. Since 
 
 Lastly, I left merged two data frames by zip code, this should not be affected by new data set from same data source. Except that zip code is not called “RegionName” in a new data source. Although I could write a function to iterate the column names of a data frame and find one containing “zip”, or iterate the first row of data frame, find the location of a five-digit number/string, and then extract its column name at that location, it still could make mistake, I think it would be better to find that column name according to metadata field description.
 
-##Conclusion Visualization
+## Conclusion Visualization
 
 It is very convenient to conduct visualization in R, especially when it comes to map. I chose ggmap to visualize conclusion. 
 
@@ -138,7 +138,7 @@ Except the traditional Manhattan central areas (financial district, time square)
 
 
 
-##Further Exploration
+## Further Exploration
 
 For further exploration, firstly, the rental price change could also be taken into account if we could get more data from Airbnb. We could accumulate the price until the date the host changes it. In this way, we could get a more robust price for listings.
 
