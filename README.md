@@ -4,7 +4,7 @@ To analyze which zip codes are the best to invest in, I need to break down both 
 
 Considering the client wants to understand which zip codes would generate the most profit on short term rentals within New York City at this time, I will only consider the rental profit as profit and property market price as cost. The rental profit comes from the property’s rental price and occupancy rate. If Airbnb’s data with one zip code is sufficient enough, we could estimate rental price from it. At the same time, I will build my own model for occupancy rate. 
 
-Data Shaping and Cleaning
+## Data Shaping and Cleaning
 
 Firstly, in real world, the first data quality issue is, how to tell which information might be useful in the next steps and how to take advantage of those info. In this project, I selected the specific id to track listings. I also extracted scrap/update date info to know the time of listing price, just in case there are price changes for one listing during our observing window. I was not sure whether there will be missing or incorrect values for location and number of bedroom, so I chose space and description as well as all the location information and bedrooms. At last, I am concerned about occupation rate, I thought availability info and reviews might be helpful. Of course, if I have other ideas in the following process, I still could extract the deleted columns from original data frame because I always keep them.
 
