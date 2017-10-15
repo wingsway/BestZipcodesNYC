@@ -82,7 +82,7 @@ After dropping the zip codes with too less data points, throwing away zip codes 
 
 I put the results in NYC’s google map, if the point is bluer, that zip code is more profitable. If the point is redder, that zip code would take longer to get investment back. 
 
-![](Rplot.pdf)
+![](https://raw.github.com/wingsway/BestZipcodesNYC/blob/master/Rplot.pdf)
 
 Except the traditional Manhattan central areas (financial district, time square), it seems that Brooklyn is a very promising investment area.
 
