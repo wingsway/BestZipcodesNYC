@@ -1,38 +1,5 @@
-<<<<<<< Updated upstream
-## Problem Analytics
-||||||| merged common ancestors
-#Table of Contents
-
-##Problem Analytics
-	
-##Data Shaping and Cleaning
-	
-##Data Analytics	
-
-##Model Scalability	
-
-##Conclusion Visualization
-	
-##Further Exploration	
-
-##Problem Analytics
-=======
-# Table of Contents
 
 ## Problem Analytics
-	
-## Data Shaping and Cleaning
-	
-## Data Analytics	
-
-## Model Scalability	
-
-## Conclusion Visualization
-	
-## Further Exploration	
-
-## Problem Analytics
->>>>>>> Stashed changes
 
 To analyze which zip codes are the best to invest in, I need to break down both the profit and cost. Usually, profits come from the value increasing of the property itself and the rental revenue by leasing it out. Cost is more complex, including the original buying price, the tax, the maintenance fee and so on, not to mention the interest and time value of money have been ignored. But the main part is still the property market price. 
 
@@ -116,7 +83,7 @@ After dropping the zip codes with too less data points, throwing away zip codes 
 
 I put the results in NYC’s google map, if the point is bluer, that zip code is more profitable. If the point is redder, that zip code would take longer to get investment back. 
 
-![](https://raw.github.com/wingsway/BestZipcodesNYC/blob/master/Rplot.pdf)
+![](https://raw.github.com/wingsway/BestZipcodesNYC/blob/master/filename.png)
 
 Except the traditional Manhattan central areas (financial district, time square), it seems that Brooklyn is a very promising investment area.
 
